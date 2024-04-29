@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="bilder/man.svg" />
+    <title>My Shopping Cart</title>
+</head>
+
+<section class="container">
+    <div class="nav"> 
+        <a class="logo" href="index.html"><img src="bilder/logo.svg" width="40px" /></a>
+        <nav>
+          <ul class="nav__links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Shopping">Shopping</a></li>
+            <li><a href="#Help">Help</a></li>
+          </ul>
+        </nav>
+        <a class="cart" href="cart.html"><img src="bilder/cart.svg" width="40px" /><span id="count-cart"></span></a>
+    </div>
+
+    
+    <header id="Home">
+        <h1>Welcome</h1>
+        <video src="#"></video>
+        <h3>We have all the best clothes you need</h3>
+    </header>
+
+    <main id="Shopping">
+        <div class="produ1">
+            <img src="bilder/jumper.webp" alt="" width="150px">
+            <p>Genser 999'kr</p>
+            <button onclick="addToCart('Genser', '999kr', 'bilder/jumper.webp')"><h5>legg i handvågn</h5></button>
+        </div>
+        <div class="produ2">
+            <img src="bilder/tshirt.webp" alt="" width="150px">
+            <p>T-shorte 399'kr</p>
+            <button onclick="addToCart('T-shorte', '399kr', 'bilder/tshirt.webp' )"><h5>legg i handvågn</h5></button>
+        </div>
+        <div class="produ3">
+            <img id="IJeans" src="bilder/jens.jpg" alt="" width="150px">
+            <p>Jeans 499'kr</p>
+            <button onclick="addToCart('Jeans', '499kr', 'bilder/jens.jpg'  )"><h5>legg i handvågn</h5></button>
+        </div>
+    </main>
+
+    <footer id="Help"></footer> 
+
+
+    <script src="script.js"></script>
+</section>
+
+
+</html>

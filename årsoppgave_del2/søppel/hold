@@ -1,0 +1,50 @@
+function toggleCart() {
+    const cart = document.getElementById('cart');
+    cart.style.display = (cart.style.display === 'none' || cart.style.display === '') ? 'block' : 'none';
+}
+
+<body>
+        <header>
+            <h1>My Shopping Cart</h1>
+        </header>
+
+        <i class='bx bx-basket cart-icon' onclick="toggleCart()"></i>
+
+        <main>
+            <div class="product">
+                <h2>Product 1</h2>
+                <p>$20.00</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h2>Product 2</h2>
+                <p>$30.00</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+
+            <!-- Add more product listings as needed -->
+        </main>
+
+        <div class="cart" id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: $<span id="cartTotal">0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+
+    let Cnubber = 0
+
+function Addcart() {
+    Cnubber += 1
+    printcountcard()
+}
+
+function printcountcard() {
+    document.getElementById ("count-card").textContent = Cnubber
+
+}
